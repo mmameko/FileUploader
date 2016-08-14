@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Uploader - Demo</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet"/>
+    <script type="text/javascript" src="FileUploader.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            fu = new FileUploader({
+                target: document.getElementById("dropzone"),
+                maxSize: '3mb',
+                allowedTypes: ['jpg']
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="dropzone" style="height: 250px;">
+
+    </div>
+</body>
+</html>

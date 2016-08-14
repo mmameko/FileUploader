@@ -1,0 +1,28 @@
+.dropzone{
+  background-color: @dropzoneBackgroundColor;
+  border-radius: @dropzoneBorderRadius;
+  border: 2px dashed @dropzoneBorderColor;
+  transition: all @dropzoneBackgroundChangeDelay;
+
+  &:hover{
+    border-color: darken(@dropzoneBorderColor, 10%);
+    background-color: darken(@dropzoneBackgroundColor, 10%);
+    transition: all @dropzoneBackgroundChangeDelay;
+  }
+
+  .dropzone-label{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    color: @dropzoneLabelFontColor;
+    font-style: italic;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .input-file{
+    display: none;
+  }
+}
